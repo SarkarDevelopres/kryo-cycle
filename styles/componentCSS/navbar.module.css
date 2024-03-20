@@ -13,7 +13,7 @@
 }
 .responsiveNav {
   z-index: 4; /* Ensure proper stacking order */
-  position: absolute;
+  position: fixed;
   display: none;
   flex-wrap: wrap;
   justify-content: center;
@@ -103,6 +103,7 @@
   .cartCompList{
     height: 80vh;
     overflow-y: auto;
+    overflow-x: hidden;
   }
   .shoppingBtn{
     display: flex;
@@ -179,6 +180,9 @@
   @media screen and (max-width: 375px) {
     .responsiveNav a{
       font-size: 1rem;
+    }
+    .cartMenu{
+     padding: 5px;
     }
   }
   /* Nav Bar Styles END */

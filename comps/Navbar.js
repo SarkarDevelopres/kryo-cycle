@@ -152,7 +152,6 @@ function Navbar({ color, page }) {
           ))}
         </div>
         <div>{cartBtn}</div>
-        {/* </div> */}
       </div>
     </div>
   );
