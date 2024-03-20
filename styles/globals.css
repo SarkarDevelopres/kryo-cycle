@@ -4,6 +4,7 @@ body {
   margin: 0px;
   font-family: 'Racing Sans One', cursive;
   overflow-x: hidden;
+  color: #ffffff;
 }
 ::-webkit-scrollbar {
   width: 10px;
