@@ -1,0 +1,462 @@
+/* Who We Are Section Start Here */
+
+.whoWeAre{
+  background-image: url(../public/moutain-bike.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.backgroundElement{
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#00000069 0%,rgb(22 22 22) 100%);
+    opacity: 1;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+.whoWeAreDiv{
+    padding: 50px 150px 200px 150px;
+    text-align: center;
+}
+.whoWeAreDiv h1{
+    font-size: 5rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.WhoAreWeBanner{
+    width: 100%;
+    background-image: url(../public/about-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+  }
+  .bPMaskDiv{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+  .bPVideo{
+    height: 100%;
+    padding:30% 0% 2% 5%;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .bPVideo:hover{
+    cursor: pointer;
+  }
+
+  /* Who We Are Section Ends Here */
+
+  /* Explore Stories Starts Here  line 23-71*/
+
+  .exploreStories{
+    padding: 50px 100px;
+    background-color: rgb(255, 255, 255);
+  }
+  .exploreStoriesContent{
+    text-align: center;
+    width: 100%;
+    padding: 10px 50px;
+  }
+  .exploreStoriesContent h1{
+    font-size: 4rem;
+    color: rgb(0 0 0);
+    font-weight: 300;
+  }
+  .aboutCardContent,.aboutCardContentReverse{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+  }
+  .aboutCardContentReverse{
+    flex-direction: row-reverse;
+  }
+  .dualCards{
+    box-sizing: border-box;
+    width: 30%;
+  }
+  .smallCard:first-child{
+    margin-bottom: 25px;
+  }
+  .smallCard{
+    box-sizing: border-box;
+    height: 225px;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+  }
+  .maskSmall,.maskSingle{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 150px 0px 0px 20px;
+    background-image: linear-gradient(rgb(0,0,0,0),rgb(27, 27, 27));
+    transition: background-image 400ms;
+  }
+ .maskSingle:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgb(27, 27, 27));
+    cursor: pointer;
+  }
+  .maskSmall:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgb(27, 27, 27));
+    cursor: pointer;
+  }
+  .maskSingle{
+    padding: 380px 0px 0px 20px;
+  }
+  .singleCard{
+    box-sizing: border-box;
+    width: 65%;
+    height: 480px;
+    text-align: left;
+    background-position: center;
+    background-size: cover;
+  }
+  .singleCard h2,.smallCard h2{
+    margin: 0px;
+    font-weight: 300;
+  }
+  .singleCard p,.smallCard p{
+    color: rgb(224, 0, 0);
+    margin: 0px;
+  }
+  .smallCard h2{
+    font-size: 1.5rem;
+  }
+  .singleCard h2{
+    font-size: 2rem;
+  }
+
+  /* Explore Stories Ends Here */
+
+  /* Our Processes Starts Here  line 72-*/
+
+  .ourProcess{
+    padding: 5px 150px;
+    padding-bottom: 50px;
+    background-color: rgb(255 255 255);
+    color: rgb(0 0 0 );
+    text-align: center;
+  }
+  .ourProcess h1{
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 10px 0px;
+    padding-bottom: 30px;
+  }
+  .processDec{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .processSteps{
+    width: 25%;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 0px 15px
+  }
+  .processSteps h2{
+    margin: 0px;
+    padding: 10px 0px;
+    font-weight: 300;
+  }
+  .processSteps h3,.processSteps p{
+    margin: 0px;
+  }
+  .processSteps h3{
+    color: rgb(224, 0, 0);
+  }
+  .processSteps p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  /* Our Processes Ends Here */
+
+  /* JOIN BIKING PROGRAM SECTION STARTS HERE */
+
+.bikingProgram{
+    padding: 100px;
+    background-color: rgb(245, 245, 245);
+    color: rgba(0,0,0,1);
+  }
+  .bikingProgramContent{
+    text-align: center;
+    width: 100%;
+    padding: 0% 10%;
+  }
+  .bikingProgramContent h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+  .bikingProgramBanner{
+    width: 100%;
+    background-image: url(../public/join-programme.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+  }
+  .bPMaskDiv{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+  .bPVideo{
+    height: 100%;
+    padding:30% 0% 2% 5%;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .bPVideo:hover{
+    cursor: pointer;
+  }
+  .bikingProgramText{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bikingProgramAbout{
+    width: 40%;
+    text-align: left;
+  }
+  .bikingProgramAbout h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  .bikingProgramBtn{
+    display: flex;
+    justify-content: center;
+  }
+  .bikingProgramBtn button{
+    padding: 10px 0px;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgb(224, 0, 0);
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .bikingProgramBtn button:hover{
+    /* font-weight: 600; */
+    cursor: pointer;
+    background-color: rgb(150, 0, 0);
+  }
+  /* JOIN BIKING PROGRAM SECTION ENDS HERE */
+  
+  .buyNowX26{
+    background-image: url(../public/bike-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .buyNowX26Content{
+    padding: 100px 200px;
+    text-align: center;
+  }
+  .buyNowX26Content span{
+    font-size: 1.5rem;
+  }
+  .buyNowX26Content h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+  .buyNowBtn{
+    padding: 10px 0px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgb(224, 0, 0);
+    font-family: 'Roboto', sans-serif;
+  }
+  .buyNowBtn:hover{
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgb(150, 0, 0);
+  }
+  @media screen and (max-width: 1300px) {
+    .smallCard h2{
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (max-width: 1220px) {
+    .bikingProgram{
+      padding: 50px;
+    }
+    .exploreStoriesContent{
+      padding: 0px;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .exploreStories{
+      padding: 50px;
+    }
+    .bikingProgramContent{
+      padding: 0px 20px;
+    }
+    .bikingProgramAbout{
+      width: 50%;
+    }
+    .bikingProgramBtn{
+      width: 40%;
+    }
+    .ourProcess{
+      padding: 50px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .processDec{
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .processSteps{
+      width: 230px;
+    }
+  }
+  @media screen and (max-width: 950px) {
+    .whoWeAre{
+      /* background-image: url(../public/phone-mountain-bike-1.jpg); */
+    }
+    .whoWeAreDiv{
+      padding: 50px;
+    }
+    .whoWeAreDiv h1{
+      margin: 20px 0px;
+    }
+    .exploreStories{
+      padding: 50px;
+    }
+    .exploreStoriesContent{
+      padding: 0px;
+    }
+  }
+  @media screen and (max-width: 870px) {
+    .bikingProgram{
+      padding: 20px 50px;
+    }
+    .bikingProgramContent{
+      padding: 0px;
+    }
+    .bikingProgramAbout{
+      width: 55%;
+    }
+    .buyNowX26Content{
+      padding: 60px 20px;
+    }
+    .buyNowX26Content h1{
+      font-size: 3rem;
+    }
+    .buyNowX26Content p{
+      font-weight: 300;
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .whoWeAreDiv{
+      padding: 0px;
+      padding-bottom: 30px;
+    }
+    .WhoAreWeBanner{
+      height: 500px;
+    }
+    .ourProcess{
+      padding: 50px 20px;
+    }
+    .bikingProgramText{
+      flex-direction: column;
+    }
+    .bikingProgramAbout{
+      width: 100%;
+    }
+    .bikingProgramBtn{
+      width: fit-content;
+    }
+    .bikingProgramBanner{
+      height: auto;
+      aspect-ratio: 0.8;
+    }
+    .bPVideo{
+      padding: 85% 0% 2% 5%;
+    }
+    .aboutCardContent{
+      padding-bottom: 0px;
+    }
+    .aboutCardContent,.aboutCardContentReverse{
+      flex-direction: column;
+    }
+    .smallCard:first-child{
+      margin-bottom: 0px;
+    }
+    .dualCards,.singleCard{
+      width: 100%;
+    }
+    .singleCard,.smallCard{
+      height: auto;
+      aspect-ratio: 1.5;
+    }
+    .singleCard h2,.smallCard h2{
+      font-size: 2rem;
+    }
+    .maskSingle,.maskSmall{
+      padding: 50% 0% 0% 5%;
+    }
+    .smallCard{
+      margin: 10px 0px;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .processDec{
+      flex-direction: column;
+    }
+    .processSteps{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .bikingProgramContent h1,.exploreStoriesContent h1,.ourProcess h1{
+      font-size: 2.8rem;
+    }
+    .bikingProgramText{
+      align-items: center;
+      justify-content: center;
+    }
+    .bikingProgramAbout{
+      text-align: center;
+    }
+    .bPVideo{
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .bikingProgram,.exploreStories{
+      padding: 20px 10px;
+    }
+    .singleCard h2,.smallCard h2{
+      font-size: 1.2rem;
+    }
+    .maskSingle,.maskSmall{
+      padding: 45% 0% 0% 5%;
+    }
+  }

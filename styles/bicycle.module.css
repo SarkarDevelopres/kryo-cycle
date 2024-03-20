@@ -1,0 +1,193 @@
+.navbarDiv {
+    padding: 1rem;
+}
+
+.mainDiv {
+    background-color: rgb(236, 240, 244);
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchDiv,
+.filterCategoreyDiv,
+.filterPriceDiv {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0px;
+    color: rgb(223 69 62);
+}
+.filterPriceDiv p{
+    color: black;
+}
+.searchDiv {
+    margin-top: 0px;
+    padding-bottom: 30px;
+}
+
+.searchBarDiv {
+    display: flex;
+    align-items: center;
+}
+.searchBarDiv input{
+    color: black;
+}
+.searchBarDiv span:hover{
+    background-color: rgb(190 69 62);
+    cursor: pointer;
+}
+.filterCategoreyDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.filterCategoreyDiv h3 {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.filterCategoreyOptions {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.searchDiv p {
+    margin: 15px 0px;
+    color: black;
+}
+
+.searchBarDiv input {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-size: 1.2rem;
+    padding: 3px 5px;
+    height: 35px;
+    width: 80%;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.searchBarDiv span {
+    width: 10%;
+    height: 35px;
+    background-color: rgb(223 69 62);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideBar {
+    max-width: 30%;
+}
+
+.contentDiv {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 30px 60px;
+    width: 68%;
+    color: black;
+}
+
+.contentHeading {
+    padding: 40px 0px;
+}
+
+.contentHeading span {
+    color: grey;
+}
+
+.contentHeading h1 {
+    font-size: 5rem;
+    color: rgb(223 69 62);
+    font-weight: 300;
+}
+
+.contentFilter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentProducts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1125px) {
+    .mainDiv{
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 1045px) {
+    .contentDiv{
+        padding: 20px ;
+    }
+}
+@media screen and (max-width: 900px) {
+    .sideBar{
+        /* display: flex; */
+        width: 100%;
+        max-width: 100%;
+        /* background-color: rgb(255,255,255); */
+    }
+    .mainDiv{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .contentDiv{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .searchDiv,.filterCategoreyDiv,.filterPriceDiv {
+        margin: 20px 0px;
+    }
+    .searchBarDiv input{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .contentHeading h1{
+        font-size: 4rem;
+        margin: 5px 0px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .contentProducts{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contentProducts{
+        justify-content: space-around;
+    }
+    .mainDiv{
+        padding: 20px 10px;
+    }
+}
+@media screen and (max-width: 455px) {
+    .contentDiv{
+        padding: 20px 10px;
+    }
+    .mainDiv{
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .contentHeading h1{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    .contentProducts{
+        justify-content: center;
+    }
+}

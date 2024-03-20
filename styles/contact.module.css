@@ -1,0 +1,366 @@
+/* TOP SECTION STARTS HERE */
+.main {
+    background-image: url(../public/about-bg-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center -200px;
+    background-repeat: no-repeat;
+}
+
+.maskDiv {
+    padding: 1rem;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #00000069 0%, rgb(22 22 22) 100%);
+    opacity: 1;
+    padding: 1rem 1rem 2rem 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.headerDiv {
+    padding: 150px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.headerDiv h1 {
+    font-size: 5rem;
+    color: white;
+    font-weight: 300;
+    margin: 0px;
+    padding-bottom: 50px;
+}
+
+/* TOP SECTION ENDS HERE */
+
+/* GOOGLE MAP API SECTION STARTS HERE */
+.mapAPI {
+    width: 100%;
+    padding: 200px 0px;
+    background-image: url(../public/mapPseudo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* GOOGLE MAP API SECTION ENDS HERE */
+
+/* ENQUIRY NO SECTION STARTS HERE */
+.enquirySection {
+    width: 100%;
+    padding: 150px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.enquiryCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.enquiryCards span {
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
+
+.enquiryCards p {
+    margin: 0px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.cardIcon {
+    font-size: 3rem;
+    color: rgb(210, 0, 0);
+}
+
+/* ENQUIRY NO SECTION ENDS HERE */
+
+/* CONTACT DETAILS SECTION STARTS HERE */
+.contactDiv {
+    padding: 50px 0px;
+    background-color: rgb(245 245 245);
+    color: black;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Contact Form Starts Here */
+.contactForm {
+    position: relative;
+    top: -100px;
+    /* border: 1px solid rgba(0, 0, 0, 0.21); */
+    background-color: rgb(255, 255, 255);
+    padding: 20px 60px;
+    width: 35%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.1);
+    transition: box-shadow 400ms;
+}
+
+.contactForm:hover {
+    box-shadow: 0px 0px 15px 4px rgb(0, 0, 0, 0.2);
+}
+
+.contactForm h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.contactFormBody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.dualInputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dualInputs input {
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.contactFormBody input {
+    background-color: rgba(165, 165, 165, 0.1) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 10px 5px;
+    color: rgba(61, 61, 61, 0.7) !important;
+    font-weight: 500;
+    -webkit-text-fill-color: rgba(61, 61, 61, 0.7) !important;
+    background-clip: text !important;
+    box-shadow: inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(165, 165, 165, 0.1) inset;
+}
+
+.contactFormBody textarea {
+    background-color: rgba(165, 165, 165, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+    color: rgba(61, 61, 61, 0.7);
+    ;
+    font-weight: 500;
+    height: 300px;
+    resize: none;
+}
+
+.contactFormBody textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+.contactFormBody textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.contactFormBody textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contactFormBody button {
+    padding: 10px;
+    background-color: rgb(200, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-bottom: 80px;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.contactFormBody button:hover {
+    background-color: rgb(150, 0, 0);
+    cursor: pointer;
+}
+
+/* Contact Form Ends Here */
+.contactDetails {
+    width: 40%;
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+
+.contactDetails h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.cdParas {
+    padding: 20px 0px;
+}
+
+.cdParas h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.cdParas p {
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* CONTACT DETAILS SECTION ENDS HERE */
+@media screen and (max-width: 1450px) {
+    .contactForm {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .contactFormBody textarea {
+        height: 250px;
+    }
+
+    .contactForm {
+        width: 40%;
+    }
+
+    .main {
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .contactForm {
+        height: 600px;
+    }
+
+    .contactFormBody {
+        height: 430px;
+        justify-content: space-between;
+    }
+
+    .contactFormBody button {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .enquirySection {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contactForm {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .enquirySection {
+        padding: 100px 150px;
+    }
+
+    .enquirySection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enquiryCards {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0px;
+    }
+
+    .cardDetails {
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .contactDiv {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .contactForm {
+        width: 100%;
+        top: 0px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .contactFormBody {
+        height: 480px;
+    }
+
+    .contactDetails {
+        padding: 50px 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .enquirySection {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .dualInputs {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 95px;
+    }
+
+    .dualInputs input {
+        width: 100%;
+    }
+
+    .contactForm h1,
+    .contactDetails h1 {
+        font-size: 2.5rem;
+    }
+
+    .enquirySection {
+        padding: 50px 20px;
+    }
+
+    .headerDiv h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .dualInputs {
+        height: 90px;
+    }
+}
+@media screen and (max-width: 310px) {
+    .cardIcon {
+        font-size: 2rem;
+    }
+
+    .enquiryCards span {
+        font-size: 1rem;
+    }
+
+    .enquiryCards p {
+        font-size: 0.5rem;
+    }
+}

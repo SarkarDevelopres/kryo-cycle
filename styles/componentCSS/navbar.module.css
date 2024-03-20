@@ -1,0 +1,184 @@
+/* Nav Bar Styles START */
+
+.navBar{
+  color: white;
+  width: 100%;
+  padding: 10px 100px;
+  z-index: 3;
+}
+.mainNav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.responsiveNav {
+  z-index: 4; /* Ensure proper stacking order */
+  position: absolute;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0,0.7);
+  padding: 20px;
+  width: 100%;
+  top: 80px;
+  right: -100vw;
+  opacity: 0.4;
+  transition: right 0.3s ease; /* Only transition the right property */
+}
+.responsiveNav a{
+  font-size: 1.2rem;
+  padding: 0px 5px;
+}
+.resNavDivs{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: space-around; */
+}
+  .logo img{
+    width: 80px;
+  }
+  .logo img:hover{
+    cursor: pointer;
+  }
+  .navBtns{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .navBtns *{
+    padding: 0px 5px;
+    font-weight: 300;
+    text-shadow: 0;
+    transition: text-shadow 400ms;
+  }
+  .navBtns *:hover{
+    cursor: pointer;
+    color: rgb(215, 215, 215);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  .iconsDiv{
+    display: flex;
+    align-items: center;
+  }
+  .menuBtn{
+    display: none;
+  }
+  .cartBtn:hover{
+    cursor: pointer;
+  }
+  .cartMenu{
+    transition: all 1000ms ease-in-out;
+    position: fixed;
+    top: 0px;
+    right: -100vw;
+    z-index: 5;
+    transition: right 0.5s ease;
+    background-color: rgb(250,250,250);
+    padding: 20px;
+    color: rgb(0,0,0);
+    width: 600px;
+    height: 100vh;
+  }
+  .cartHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .cartHead p{
+    margin: 0px;
+    font-size: 1.2rem;
+  }
+.closeBtn:hover{
+    cursor: pointer;
+}
+  .horizontalLine{
+    margin: 10px 0px;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(40,40,40,0.5);
+  }
+  .cartCompList{
+    height: 80vh;
+    overflow-y: auto;
+  }
+  .shoppingBtn{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(223, 72,62);
+    border: none;
+    font-size: 1.5rem;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    color: rgb(255,255,255);
+    width: 100%;
+    letter-spacing: 1px;
+  
+  }
+  .shoppingBtn:hover{
+    background-color: rgb(160, 26, 17);
+    cursor: pointer;
+  }
+  .checkoutBtn{
+    background-color: rgb(0, 130, 0);
+    color: rgb(255,255,255);
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkoutBtn:hover{
+    background-color: rgb(0,100,0);
+  }
+
+  @media screen and (max-width: 1240px) {
+    .navBar{
+      padding: 10px 30px;
+    }
+  }
+  @media screen and (max-width: 950px) {
+    .responsiveNav{
+      display: flex;
+    }
+    .iconsDiv{
+      width: 100px;
+      justify-content: space-between;
+    }
+    .menuBtn{
+      display: inline-block;
+    }
+    .navBtns{
+      display: none;
+    }
+  }  @media screen and (max-width: 600px) {
+    .cartMenu{
+      width: 80%;
+    }
+    .resNavDivs{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .responsiveNav a{
+      padding: 0px;
+    }
+  }  @media screen and (max-width: 400px) {
+    .navBar{
+      padding: 10px;
+    }
+    .cartMenu{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .responsiveNav a{
+      font-size: 1rem;
+    }
+  }
+  /* Nav Bar Styles END */

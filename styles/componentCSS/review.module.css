@@ -1,0 +1,22 @@
+.mainDiv{
+    padding: 20px;
+}
+.userDetails{
+    padding-bottom: 10px;
+}
+.userDetails span{
+    font-size: 1.2rem;
+    font-family: Roboto, sans-serif;
+}
+.ratingDiv{
+    display: inline;
+    margin-left: 20px;
+}
+.stars{
+    color: rgb(223,70,62);
+    font-size: 0.8rem;
+}
+.reviewContent{
+    font-family: Roboto, sans-serif;
+    line-height: 30px;
+}

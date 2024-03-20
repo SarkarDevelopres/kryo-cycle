@@ -1,0 +1,111 @@
+.wrapper{
+    width: 100%;
+    box-sizing: border-box;
+}
+.numberFields,.rangeFields{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+.rangeFields{
+    margin-top: 10px;
+}
+.fields{
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.numberInput{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+}
+.progressBarDiv{
+    position: relative;
+    width: 100%;
+    background-color: rgb(207, 207, 207);
+    border-radius: 5px;
+    height: 5px;
+    margin-top: 5px;
+}
+.progressBar{
+    height: 5px;
+    background-color: rgb(223 69 62);
+    border-radius: 5px;
+    position: absolute;
+    /* width: 50%; */
+    top: 0px;
+    right: 0%;
+    left: 0%;
+}
+.rangeInput{
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    pointer-events: none;
+    margin: 0px;
+}
+.rangeInput::-webkit-slider-thumb{
+    pointer-events: auto;
+    border:none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* -webkit-appearance: none; */
+    appearance: none;
+    background:rgb(223 69 62);
+    cursor: pointer;
+}
+.rangeInput::-webkit-slider-thumb:hover{
+    background:rgb(123 69 62);
+}
+.rangeInput::-moz-range-thumb{
+    pointer-events: auto;
+    border:none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* -moz-appearance: none; */
+    appearance: none;
+    background:rgb(223 69 62);
+    cursor: pointer;
+}
+.rangeInput::-moz-range-thumb:hover{
+    background:rgb(123 69 62);
+}
+.btnContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px 0px;
+}
+.btnBox{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+.btnBox button{
+    border: none;
+    border-radius: 5px;
+    padding: 3% 5%;
+    font-size: 1.1rem;
+    background-color: rgb(223 69 62);
+}
+.btnBox button:hover{
+    cursor: pointer;
+    background-color: rgb(190 69 62);
+}
+@media screen and (max-width: 900px) {
+    .btnBox{
+        width: 120px;
+        justify-content: space-between;
+    }
+}

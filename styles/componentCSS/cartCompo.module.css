@@ -1,0 +1,141 @@
+.mainDiv{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.productImage{
+    width: 40%;
+    aspect-ratio: 1;
+    background-position: center;
+    background-size: cover;
+}
+.productContent{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    width: 54%;
+}
+.productName{
+    font-size: 1.5rem;
+}
+.productQuantity{
+    font-size: 1.2rem;
+    margin-right: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+.productQuantity input{
+    padding: 0px;
+    font-size: 1.2rem;
+    font-family: 'Racing Sans One', cursive;
+    width: 22px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(0,0,0);
+}
+.productPrice{
+    font-size: 1.5rem;
+    color: rgb(223,72,62);
+}
+.productContent p{
+    font-size: 1.1rem;
+}
+.dualDiv{
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+.addSubBtn{
+    border: 1px solid rgb(0,0,0,0.3);
+    border-radius: 2px;
+    background-color: transparent;
+    color: rgb(0,0,0);
+    padding: 0px;
+    font-size: 1.2rem;
+    width: 25px;
+    margin-right: 5px;
+}
+.addSubBtn:hover{
+    cursor: pointer;
+    background-color: rgb(50,50,50);
+    color: rgb(255,255,255);
+}
+.updateQnty{
+    display: none;
+    font-size: 0.5rem;
+    font-weight: 600;
+    width: 50px;
+    padding: 5px;
+    margin: 0px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0,0,0);
+    background-color: rgb(255, 204, 0);
+}
+.updateQnty:hover{
+    cursor: pointer;
+    background-color: rgb(189, 152, 4);
+}
+.btnDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.btnDiv button{
+    width: 120px;
+    border: none;
+    padding: 8px 10px;
+    color: rgb(255,255,255);
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.buyNow{
+    background-color: rgb(5, 141, 5);
+}
+.buyNow:hover{
+    background-color: rgb(4, 103, 4);
+    cursor: pointer;
+}
+.delete{
+    background-color: rgba(223, 70, 62);
+}
+.delete:hover{
+    background-color: rgb(193, 24, 15);
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .productContent p{
+        display: none;
+    }
+    .productPrice{
+        font-size: 1.2rem;
+    }
+    .addSubBtn{
+        font-size: 1rem;
+        width: 20px;
+    }
+    .btnDiv button{
+        width: 100px;
+
+    }
+}
+@media screen and (max-width: 525px) {
+    .productContent{
+        width: 45%;
+    }
+    .productImage{
+        width: 50%;
+    }
+    .productName{
+        font-size: 1.2rem;
+    }
+    .dualDiv{
+        flex-direction: column;
+    }
+    .btnDiv button{
+        width: 100px;
+        font-size: 0.8rem;
+    }
+}
