@@ -109,7 +109,7 @@ function cartItem() {
                 amount: data.amount,
                 order_id: data.id,
                 description: "Enjoy your product!!",
-                image: '../public/razorpaylogo.jpeg',
+                image: 'https://scontent.fccu13-2.fna.fbcdn.net/v/t39.30808-6/433960377_314070231686489_4118192843236827368_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=eZpwmsn0nu8AX95g8Oc&_nc_ht=scontent.fccu13-2.fna&oh=00_AfADK90BSCc9C5M29Myi-xkYwsvqDHMOALZn3gHeBPcWvw&oe=65FFB15E',
 
                 handler: async function (response) {
                     const a = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/razorpay/orderItem`, {

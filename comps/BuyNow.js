@@ -3,9 +3,10 @@ import jwt_decode from 'jwt-decode';
 import { useRouter } from 'next/router';
 import styles from '../styles/componentCSS/buyNow.module.css';
 import { BsCartCheck } from "react-icons/bs";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-function BuyNow({ amnt, qnty }) {
-    // const [cartitems, setCartitems] = useState([]);
+function BuyNow() {
     const [cartTotal, setcartTotal] = useState();
     const [productQntyList, setproductQntyList] = useState([]);
     const [userDetails, setUserDetails] = useState({
@@ -91,7 +92,7 @@ function BuyNow({ amnt, qnty }) {
                     amount: data.amount,
                     order_id: data.id,
                     description: "Enjoy your product!!",
-                    image: '../public/razorpaylogo.jpeg',
+                    image: 'https://scontent.fccu13-2.fna.fbcdn.net/v/t39.30808-6/433960377_314070231686489_4118192843236827368_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=eZpwmsn0nu8AX95g8Oc&_nc_ht=scontent.fccu13-2.fna&oh=00_AfADK90BSCc9C5M29Myi-xkYwsvqDHMOALZn3gHeBPcWvw&oe=65FFB15E',
                     handler: async function (response) {
                         const a = await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/razorpay/orderCartItem`, {
                             method: 'POST',
@@ -108,8 +109,18 @@ function BuyNow({ amnt, qnty }) {
                             })
                         });
                         const paymentStatus = await a.json();
-                        alert(paymentStatus.message);
                         if (paymentStatus.success) {
+                            toast.success(`${paymentStatus.message}`, {
+                                position: "top-right",
+                                autoClose: 3000,
+                                hideProgressBar: false,
+                                closeOnClick: true,
+                                pauseOnHover: false,
+                                draggable: true,
+                                progress: undefined,
+                                theme: "colored",
+                                // transition: Bounce,
+                            });
                             localStorage.removeItem("cartItems");
                             await fetch(`${process.env.NEXT_PUBLIC_PORT}/api/cart/deleteByUserId`,{
                                 method: 'POST',
@@ -140,7 +151,17 @@ function BuyNow({ amnt, qnty }) {
                 console.error('Error making payment:', error);
             }
         } else {
-            alert("Login To purchase!");
+            toast.warn(`Login To purchase!`, {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                // transition: Bounce,
+            });
             router.push(`${process.env.NEXT_PUBLIC_PORT}/login`);
         }
     };
@@ -163,6 +184,18 @@ function BuyNow({ amnt, qnty }) {
 
     return (
         <div className={styles.mainDiv}>
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover={false}
+                theme="colored"
+            />
             <button id='rzp-button1' onClick={makePayment}>CheckOut Cart <BsCartCheck size={30}/> </button>
         </div>
     );
