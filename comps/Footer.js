@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
         <div className={styles.footerDiv2}>
-          <div>Copyright © 2023 Cycle Shop</div>
+          <div>Developed by Sarkar Developers</div>
           <div className={styles.footerIcons}>
             <FaFacebook/>
             <FaTwitter/>
